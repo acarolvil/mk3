@@ -1,0 +1,19 @@
+ul.lista-beneficios {
+    padding-left: 0;
+    list-style: none;
+}
+
+img.imagem-beneficios {
+    width: 70%;
+    box-shadow: 0px 1px 10px #00000030;
+    border-radius: 17px;
+}
+
+li.item-beneficios {
+    display: flex;
+    justify-content: center;
+}
+
+li.item-beneficios {
+    margin: 3em 0;
+}

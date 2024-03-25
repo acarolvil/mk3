@@ -1,0 +1,32 @@
+.conteudo-header{
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+ul.lista-links-header {
+    display: flex;
+    list-style: none;
+    /* padding: 0em 1em; */
+    padding-left: 0;
+}
+
+li.item-link-header {
+    padding: 0em 1em;
+}
+
+button.bnt-associar-header {
+    background: linear-gradient(63deg, #0070AD, #683D91);
+    border: none;
+    border-radius: 40px;
+    padding: 0.5em 2em;
+    color: white;
+    font-size: 17px;
+}
+
+.header{
+    display: none;
+}
+

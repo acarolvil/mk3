@@ -1,0 +1,22 @@
+.imagem-logo-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-banner {
+   width: 55%;
+}
+
+
+h1.titulo-banner {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 0em;
+}
+
+h2.texto-banner {
+    font-size: 16px;
+    margin-top: 5em;
+}

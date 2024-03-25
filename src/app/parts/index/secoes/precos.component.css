@@ -1,0 +1,16 @@
+
+h1.titulo-precos {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.caixa-imagem-precos{
+    display: flex;
+    justify-content:center;
+
+}
+.imagem-precos{
+    width: 70%;
+}
+

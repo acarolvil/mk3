@@ -1,0 +1,27 @@
+@import url(secoes/header.component.css);
+@import url(secoes/banner.component.css);
+@import url(secoes/quem-somos.component.css);
+@import url(secoes/beneficios.component.css);
+@import url(secoes/precos.component.css);
+@import url(secoes/conteudos.component.css);
+@import url(secoes/testemunhas.component.css);
+.container{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 100px;
+
+}
+
+:root {
+    --teste: #007bff; /* Defina suas variáveis personalizadas aqui */
+    --secondary-color: #6c757d;
+  }
+
+  button.btn-associar {
+    background: #4BB9EC;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 0.8em 4em;
+    font-size: 15px;
+}

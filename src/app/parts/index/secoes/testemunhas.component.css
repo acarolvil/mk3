@@ -1,0 +1,8 @@
+.slide {
+    display: flex;
+    margin: 2em 0;
+    box-shadow: -1px 0px 10px #00000075;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}

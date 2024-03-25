@@ -1,0 +1,20 @@
+.caixa-imagem-conteudos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-conteudos{
+    width: 72%;
+}
+
+ul.lista-conteudos {
+    padding-left: 0;
+    list-style: none;
+}
+
+h2.titulo-conteudos {
+    text-align: center;
+    font-size: 19px;
+    margin: 2em 0;
+}
