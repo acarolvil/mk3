@@ -1,32 +1,112 @@
-.conteudo-header{
-    display: flex;
-    /* justify-content: space-around; */
-    justify-content: space-between;
-    align-items: center;
-    font-size: 20px;
+.conteudo-header {
+  display: flex;
+  /* justify-content: space-around; */
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
 }
 
 ul.lista-links-header {
-    display: flex;
-    list-style: none;
-    /* padding: 0em 1em; */
-    padding-left: 0;
+  display: flex;
+  list-style: none;
+  /* padding: 0em 1em; */
+  padding-left: 0;
 }
 
 li.item-link-header {
-    padding: 0em 1em;
+  padding: 0em 1em;
 }
 
-button.bnt-associar-header {
-    background: linear-gradient(63deg, #0070AD, #683D91);
+button.btn-associar-header {
+  background: linear-gradient(63deg, #0070AD, #683D91);
+  border: none;
+  border-radius: 40px;
+  padding: 0.5em 2em;
+  color: white;
+  font-size: 17px;
+}
+
+
+
+.mat-drawer {
+  display: flex;
+  justify-content: start;
+}
+.mobile{
+  display: none;
+}
+@media screen and (max-width: 900px) {
+
+  .mobile{
+    display: block;
+  }
+  .menu-mobile[_ngcontent-ng-c1439721779] {
+    display: block;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    min-width: 100vw;
+
+  }
+
+  mat-drawer.mat-drawer {
+    min-width: 60%;
+    background-color: #ffffff;
     border: none;
-    border-radius: 40px;
-    padding: 0.5em 2em;
-    color: white;
-    font-size: 17px;
+    box-shadow: 4px -1px 5px #00000014;
 }
 
-.header{
+
+
+
+  .menu-desktop {
     display: none;
+  }
+
+  .caixa-menu-mobile {
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    right: 0;
+    box-shadow: -4px 1px 10px #00000014;
+    width: 100%;
+    text-align: end;
+    background-color: #ffffff;
+    padding: 1.5em 0;
 }
 
+
+  .mat-drawer-container{
+    height: 100%;
+    position: fixed;
+    z-index: 95;
+    color: var(--mat-sidenav-content-text-color);
+    background-color: var(--mat-sidenav-content-background-color);
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    display: block;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    overflow: hidden;
+}
+
+mat-toolbar.mat-elevation-z {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+}
+
+mat-list-item li{
+  padding: 0.5em 0;
+}
+
+.item-link-mobile{
+  text-decoration: none;
+}
+
+}

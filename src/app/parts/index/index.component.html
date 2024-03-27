@@ -1,26 +1,59 @@
-<header class="header">
-    <div class="container">
-        <div class="conteudo-header">
-            <div class="item-header">
-                <span>logo</span>
-                <img src="" alt="" class="logo-header">
-            </div>
-            <div class="item-header">
-                <ul class="lista-links-header">
-                    <li class="item-link-header"><a class="link-header" href=""></a>Home</li>
-                    <li class="item-link-header"><a class="link-header" href=""></a>Quem somos</li>
-                    <li class="item-link-header"><a class="link-header" href=""></a>Benefícios</li>
-                </ul>
-            </div>
-            <div class="item-header">
-                <button class="bnt-associar-header">Associar-se</button>
+<!-- <header class="header">
+    <div class="menu-desktop">
+        <div class="container">
+            <div class="conteudo-header">
+                <div class="item-header">
+                    <span>logo</span>
+                    <img src="" alt="" class="logo-header">
+                </div>
+                <div class="item-header">
+                    <ul class="lista-links-header">
+                        <li class="item-link-header"><a class="link-header" href=""></a>Home</li>
+                        <li class="item-link-header"><a class="link-header" href=""></a>Quem somos</li>
+                        <li class="item-link-header"><a class="link-header" href=""></a>Benefícios</li>
+                    </ul>
+                </div>
+                <div class="item-header">
+                    <button class="btn-associar-header">Associar-se</button>
+                </div>
             </div>
         </div>
-      
-    
     </div>
-
+    <div class="menu-mobile mobile">
+        <mat-drawer-container autosize>
+            <mat-drawer #drawer opened="true" mode="side" position="start"
+                style="text-align: center;text-align: start;" class="mat-drawer">
+                <mat-nav-list >
+                    <img src="../../../assets/img/logo.png" alt="" class="logo-banner">
+                </mat-nav-list >  
+                    <mat-nav-list >
+                        <mat-list-item>
+                            <li><a href="" class="item-link-mobile">Quem somos</a></li>
+                            <li><a href="" class="item-link-mobile">Benefícios</a></li>
+                              </mat-list-item>
+                        <mat-list-item>
+                      <li><a href="" class="item-link-mobile">Quem somos</a></li>
+                      <li><a href="" class="item-link-mobile">Benefícios</a></li>
+                        </mat-list-item>
+                    </mat-nav-list>
+            </mat-drawer>
+            <mat-drawer-content>
+                <div style="text-align: center;min-height: 600px;">
+                </div>
+            </mat-drawer-content>
+        </mat-drawer-container>
+    </div>
 </header>
+<div class="caixa-menu-mobile mobile">
+    <mat-toolbar color="primary" class="mat-elevation-z">
+        <button class="btn-associar-header">Associar-se</button>
+        <button (click)="drawer.toggle()" mat-icon-button  position="end">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </mat-toolbar>
+</div> -->
+
+
 <section class="banner">
     <div class="container">
         <div class="imagem-logo-banner">
@@ -36,7 +69,20 @@
     </div>
 </section>
 
+
+
+<div class="container-cards">
+
+
+    <div class="seguros-cards">
+  
+    </div>
+  </div>
+
+
 <section class="quem-somos">
+
+
     <div class="container">
         <h1 class="titulo">Sobre nós</h1>
         <p class="texto">Com a MarketStories, nossa missão é fornecer uma plataforma que entrega, praticamente em tempo
@@ -47,11 +93,51 @@
             assertivas, maximizando assim suas oportunidades de sucesso nos mercados financeiros.</p>
         <h2 class="titulo-h2">Dados fornecidos em primeira mão</h2>
 
-        <div class="slide-quem-somos">
-
-        </div>
+       
+    </div>
+    <div class="slide-quem-somos">
+        <swiper-container
+        [navigation]="true"
+        [slidesPerView]="slidesPerView"
+  
+        [pagination]="true"
+      >
+        <swiper-slide>
+            <div class="item-slide-quem-somos" id="vida" >
+              <img src="../../../assets/img/agenda.png" alt=""  >
+        </div></swiper-slide>
+          <swiper-slide>
+            <div class="item-slide-quem-somos saude" id="saude">
+              <img src="../../../assets/img/agenda.png" alt="" >
+            </div></swiper-slide>
+          <swiper-slide>
+            <div class="item-slide-quem-somos odontologico"id="odontologico">
+              <img src="../../../assets/img/agenda.png" alt="" >
+            </div></swiper-slide>
+            <swiper-slide>
+              <div class="item-slide-quem-somos empresarial" id="empresarial">
+                  <img src="../../../assets/img/agenda.png" alt="" >
+            </div></swiper-slide>
+            <swiper-slide>
+              <div class="item-slide-quem-somos empresarial" id="empresarial">
+                  <img src="../../../assets/img/agenda.png" alt="" >
+            </div></swiper-slide>
+            <swiper-slide>
+                <div class="item-slide-quem-somos empresarial" id="empresarial">
+                    <img src="../../../assets/img/agenda.png" alt="" >
+              </div></swiper-slide>
+              <swiper-slide>
+                <div class="item-slide-quem-somos empresarial" id="empresarial">
+                    <img src="../../../assets/img/agenda.png" alt="" >
+              </div></swiper-slide>
+              <swiper-slide>
+                <div class="item-slide-quem-somos empresarial" id="empresarial">
+                    <img src="../../../assets/img/agenda.png" alt="" >
+              </div></swiper-slide>
+          </swiper-container>
     </div>
 </section>
+
 
 <section class="beneficios">
     <div class="container">
@@ -60,19 +146,17 @@
                 <img src="../../../assets/img/beneficio1.png" alt="" class="imagem-beneficios">
             </li>
             <li class="item-beneficios">
-                <img src="../../../assets/img/beneficio2.png" alt="" 
-                class="imagem-beneficios">
+                <img src="../../../assets/img/beneficio2.png" alt="" class="imagem-beneficios">
             </li>
             <li class="item-beneficios">
-                <img src="../../../assets/img/beneficio3.png" alt="" 
-                class="imagem-beneficios">
+                <img src="../../../assets/img/beneficio3.png" alt="" class="imagem-beneficios">
             </li>
         </ul>
     </div>
 </section>
 
 <section class="precos">
-    <div class="container">
+    <div class="precos-container container">
         <h1 class="titulo-precos">Comece agora!</h1>
         <div class="conteudo-precos">
             <div class="caixa-imagem-precos">
@@ -80,9 +164,10 @@
             </div>
             <div class="escrito-precos">
                 <h1 class="escrito-titulo-precos">Por apenas <span class="preco-desktop">
-                    <span id="reais">R$</span> <span id="preco">200,00</span>
-                </span>
+                        <span id="reais">R$</span> <span id="preco">200,00</span>
+                    </span>
                 </h1>
+                <h2 class="escrito-subtitulo-precos">+250 stories por mês</h2>
                 <p class="escrito-texto-precos">Descubra o poder dos insights exclusivos! Assine agora nosso serviço
                     premium e receba em média 250 histórias detalhadas sobre o mercado financeiro todo mês, por apenas
                     200 reais.</p>
@@ -104,21 +189,21 @@
             </li>
             <li class="item-conteudos">
                 <span class="caixa-imagem-conteudos">
-                  <img class="imagem-conteudos" src="../../../assets/img/twiter 1 (1).png" alt="">
+                    <img class="imagem-conteudos" src="../../../assets/img/twiter 1 (1).png" alt="">
                 </span>
                 <h2 class="titulo-conteudos">Últimas atualizações do mercado, com alertas instantâneos sobre eventos
                     críticos e movimentos rápidos do mercado financeiro.</h2>
             </li>
             <li class="item-conteudos">
                 <span class="caixa-imagem-conteudos">
-                  <img class="imagem-conteudos" src="../../../assets/img/twiter 1 (1).png" alt="">
+                    <img class="imagem-conteudos" src="../../../assets/img/twiter 1 (1).png" alt="">
                 </span>
                 <h2 class="titulo-conteudos">Ampla variedade de notícias e artigos relevantes, cuidadosamente
                     selecionados para mantê-lo informado e atualizado sobre todos os aspectos do mundo financeiro.</h2>
             </li>
             <li class="item-conteudos">
                 <span class="caixa-imagem-conteudos">
-                  <img class="imagem-conteudos" src="../../../assets/img/twiter 1 (1).png" alt="">
+                    <img class="imagem-conteudos" src="../../../assets/img/twiter 1 (1).png" alt="">
                 </span>
                 <h2 class="titulo-conteudos">Artes totalmente personalizáveis, destacando a identidade visual da sua
                     empresa.</h2>
@@ -128,7 +213,7 @@
 </section>
 
 <section class="leads">
-    <div class="container">
+    <div class="leads-caixa container">
         <div class="escrito-leads">
             <h1 class="titulo-leads">Esteja sempre a um passo à frente com a Markestorie</h1>
             <p class="texto-leads">Obtenha geração de leads consistentes como consequência de um trabalho eficiente de
@@ -139,24 +224,86 @@
 </section>
 
 
-
 <section class="testemunhas">
     <div class="container">
         <h1 class="titulo">O que nossos associados estão falando</h1>
-        <div class="slide-testemunhas">
-
-        </div>
-        <!-- colocar dentro do slide -->
-        <div class="slide">
-            <img src="../../../assets/img/testemunha.svg" alt="" class="img-testemunhas">
-            <p class="texto-testemunhas">Amet minim mollit non deseru Amet minim mollit non deseru Amet minim mollit non deseru Amet minim mollit non deseru  Amet minim mollit non deseru Amet minim mollit non deseru</p>
-            <div class="dados-testemunhas">
-                <h3 class="nome-testemunhas">
-                    Mike Taurs
-                </h3>
-                <p class="local-testemunhas">São Paulo, Brasil</p>
+    </div>
+    <div class="slide-testemunhas">
+        <swiper-container
+        [navigation]="true"
+        [slidesPerView]="1"
+        [spaceBetween]="75"
+        [pagination]="true"
+        >
+        <swiper-slide>
+            <div class="slide">
+                <img src="../../../assets/img/testemunha.svg" alt="" class="img-testemunhas">
+                <p class="texto-testemunhas">Amet minim mollit non deseru Amet minim mollit non deseru Amet minim mollit non
+                    deseru Amet minim mollit non deseru Amet minim mollit non deseru Amet minim mollit non deseru</p>
+                <div class="dados-testemunhas">
+                    <h3 class="nome-testemunhas">
+                        Mike Taurs
+                    </h3>
+                    <p class="local-testemunhas">São Paulo, Brasil</p>
+                </div>
             </div>
-        </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="slide">
+                <img src="../../../assets/img/testemunha.svg" alt="" class="img-testemunhas">
+                <p class="texto-testemunhas">Amet minim mollit non deseru Amet minim mollit non deseru Amet minim mollit non
+                    deseru Amet minim mollit non deseru Amet minim mollit non deseru Amet minim mollit non deseru</p>
+                <div class="dados-testemunhas">
+                    <h3 class="nome-testemunhas">
+                        Mike Taurs
+                    </h3>
+                    <p class="local-testemunhas">São Paulo, Brasil</p>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="slide">
+                <img src="../../../assets/img/testemunha.svg" alt="" class="img-testemunhas">
+                <p class="texto-testemunhas">Amet minim mollit non deseru Amet minim mollit non deseru Amet minim mollit non
+                    deseru Amet minim mollit non deseru Amet minim mollit non deseru Amet minim mollit non deseru</p>
+                <div class="dados-testemunhas">
+                    <h3 class="nome-testemunhas">
+                        Mike Taurs
+                    </h3>
+                    <p class="local-testemunhas">São Paulo, Brasil</p>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="slide">
+                <img src="../../../assets/img/testemunha.svg" alt="" class="img-testemunhas">
+                <p class="texto-testemunhas">Amet minim mollit non deseru Amet minim mollit non deseru Amet minim mollit non
+                    deseru Amet minim mollit non deseru Amet minim mollit non deseru Amet minim mollit non deseru</p>
+                <div class="dados-testemunhas">
+                    <h3 class="nome-testemunhas">
+                        Mike Taurs
+                    </h3>
+                    <p class="local-testemunhas">São Paulo, Brasil</p>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="slide">
+                <img src="../../../assets/img/testemunha.svg" alt="" class="img-testemunhas">
+                <p class="texto-testemunhas">Amet minim mollit non deseru Amet minim mollit non deseru Amet minim mollit non
+                    deseru Amet minim mollit non deseru Amet minim mollit non deseru Amet minim mollit non deseru</p>
+                <div class="dados-testemunhas">
+                    <h3 class="nome-testemunhas">
+                        Mike Taurs
+                    </h3>
+                    <p class="local-testemunhas">São Paulo, Brasil</p>
+                </div>
+            </div>
+        </swiper-slide>
+          </swiper-container>
+    </div>
+    <div class="container">
+        <button class="btn-associar">Associar-se</button>
     </div>
 </section>
 
@@ -171,47 +318,53 @@
 </section>
 
 <footer>
-    <div class="container">
-        <div class="logo-footer">
-            <img class="img-logo-footer" src="" alt="">
-            <p class="texto-footer">Velocidade é o que define se algo é relevante ou não no mercado.</p>
+    <div class=" footer container">
+        <div class="conteudo-footer">
+            <div class="logo-footer">
+                <img class="img-logo-footer" src="../../../assets/img/logo.png" alt="">
+                <p class="texto-footer">Velocidade é o que define se algo é relevante ou não no mercado.</p>
+            </div>
+
+            <div class="links-footer">
+                <ul class="lista-links-footer">
+                    <li class="item-link-footer">
+                        <a href="" class="link-footer">Home</a>
+                    </li>
+                    <li class="item-link-footer">
+                        <a href="" class="link-footer">Recursos</a>
+                    </li>
+                    <li class="item-link-footer">
+                        <a href="" class="link-footer">Preços</a>
+                    </li>
+                    <li class="item-link-footer">
+                        <a href="" class="link-footer">Testemunahs</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="redes-footer">
+                <ul class="lista-redes-footer">
+                    <li class="item-rede-footer">
+                        <a href=""><img src="../../../assets/img/mdi_instagram.svg" alt="" class="img-rede"></a>
+                    </li>
+                    <li class="item-rede-footer">
+                        <img src="../../../assets/img/mdi_linkedin.svg" alt="" class="img-rede">
+                    </li>
+                    <li class="item-rede-footer">
+                        <img src="../../../assets/img/mdi_twitter.svg" alt="" class="img-rede">
+                    </li>
+                    <li class="item-rede-footer">
+                        <img src="../../../assets/img/mdi_youtube.svg" alt="" class="img-rede">
+                    </li>
+                    <li class="item-rede-footer">
+                        <img src="../../../assets/img/ic_baseline-facebook.svg" alt="" class="img-rede">
+                    </li>
+                    <li class="item-rede-footer">
+                        <img src="../../../assets/img/ic_baseline-tiktok.svg" alt="" class="img-rede">
+                    </li>
+                </ul>
+            </div>
         </div>
 
-        <div class="links-footer">
-            <ul class="lista-links-footer">
-                <li class="item-link-footer">
-                    <a href="" class="link-footer">Home</a>
-                </li>
-                <li class="item-link-footer">
-                    <a href="" class="link-footer">Recursos</a>
-                </li>
-                <li class="item-link-footer">
-                    <a href="" class="link-footer">Preços</a>
-                </li>
-                <li class="item-link-footer">
-                    <a href="" class="link-footer">Testemunahs</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="redes-footer">
-            <ul class="lista-redes-footer">
-                <li class="item-rede-footer">
-                    <a href=""><img src="" alt="" class="img-rede"></a>
-                </li>
-                <li class="item-rede-footer">
-                    <a href=""><img src="" alt="" class="img-rede"></a>
-                </li>
-                <li class="item-rede-footer">
-                    <a href=""><img src="" alt="" class="img-rede"></a>
-                </li>
-                <li class="item-rede-footer">
-                    <a href=""><img src="" alt="" class="img-rede"></a>
-                </li>
-                <li class="item-rede-footer">
-                    <a href=""><img src="" alt="" class="img-rede"></a>
-                </li>
-            </ul>
-        </div>
     </div>
 </footer>

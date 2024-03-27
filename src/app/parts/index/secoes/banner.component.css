@@ -6,7 +6,7 @@
 }
 
 .logo-banner {
-   width: 55%;
+    width: 20%;
 }
 
 
@@ -19,4 +19,26 @@ h1.titulo-banner {
 h2.texto-banner {
     font-size: 16px;
     margin-top: 5em;
+}
+
+
+
+
+@media screen and (min-width: 900px) {
+    .logo-banner[_ngcontent-ng-c2159672829] {
+        width: 20%;
+    }
+
+    h1.titulo-banner {
+        font-size: 60px;
+    }
+
+    .texto-banner {
+        font-size: 20px !important;
+        text-align: center;
+        width: 60%;
+
+    }
+
+
 }

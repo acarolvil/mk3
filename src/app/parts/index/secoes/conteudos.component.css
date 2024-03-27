@@ -18,3 +18,21 @@ h2.titulo-conteudos {
     font-size: 19px;
     margin: 2em 0;
 }
+
+@media screen and (max-width: 10000px) {
+
+    li.item-conteudos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lista-conteudos .item-conteudos:nth-child(odd) {
+        display: flex;
+        flex-flow: row-reverse;
+      }
+
+      .titulo-conteudos{
+        width: 40%;
+      }
+}

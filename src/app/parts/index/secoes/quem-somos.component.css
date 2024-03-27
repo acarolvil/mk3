@@ -1,7 +1,46 @@
-section.quem-somos {
+/* section.quem-somos {
     margin-top: 56px;
 }
 
 h2.titulo-h2 {
     margin-top: 2em;
 }
+
+
+.slide-quem-somos {
+    margin-top: 2em;
+}
+
+.item-slide-quem-somos{
+    display: flex;
+    justify-content: center;
+}
+
+
+.item-slide-quem-somos img{
+ width: 70%;
+}
+@media screen and (min-width: 900px){
+    .item-slide-quem-somos img{
+        width: 100%;
+       }
+
+       .item-slide-quem-somos {
+        margin: 1em 2.5em;
+       }
+
+       swiper-slide {
+        width: 25%!important;
+    }
+
+    swiper-container {
+    margin-left: 4em;
+}
+     
+    
+  }
+
+ */
+
+
+ 

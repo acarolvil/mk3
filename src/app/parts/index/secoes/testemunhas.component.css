@@ -1,8 +1,51 @@
 .slide {
     display: flex;
-    margin: 2em 0;
-    box-shadow: -1px 0px 10px #00000075;
+    margin: 2em;
+    box-shadow: -1px 0px 10px #00000047;
     justify-content: center;
     flex-flow: column;
     text-align: center;
+    align-items: center;
+    padding: 4em 1.5em;
+}
+.img-testemunhas{
+    width: 20%;
+}
+
+p.texto-testemunhas {
+    margin-top: 2em;
+}
+
+p.local-testemunhas {
+    margin: 0;
+    margin-top: 0.5em;
+}
+
+h3.nome-testemunhas {
+    margin: 0;
+}
+
+.conteudo-testemunhas {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 10000px) {
+
+    .slide{
+        margin: 2em 6em;
+    }
+
+    .slide-testemunhas {
+        margin: 0 12em;
+    }
+
+    .img-testemunhas[_ngcontent-ng-c1115059357] {
+        width: 10%;
+    }
+
+    p.texto-testemunhas {
+        width: 80%;
+    }
 }
